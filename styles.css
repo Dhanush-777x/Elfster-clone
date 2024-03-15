@@ -290,12 +290,27 @@ body {
 
 /* Small devices */
 @media only screen and (max-width: 600px) {
+  .bg {
+    background-image: none;
+}
+
+.image-below-navbar {
+    display: block; /* Show the new image container */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-below-navbar img {
+    max-width: 100%; /* Make sure the image fits within the container */
+}
   .navbar {
     padding: 15px;
   }
 
   .secret-santa-card {
     padding: 20px;
+    border-radius: none;
+    box-shadow: none;
   }
 
   .curve {
@@ -362,7 +377,13 @@ body {
 
 /* Medium devices */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .bg {
+    display: block; /* Show background image */
+}
 
+.image-below-navbar {
+    display: none; /* Hide the new image container */
+}
   .curve {
     margin-top: 20px;
     padding: 20px 20px;
@@ -420,6 +441,13 @@ body {
 
 /* Large devices */
 @media only screen and (min-width: 1025px) and (max-width: 1640px)  {
+  .bg {
+    display: block; /* Show background image */
+}
+
+.image-below-navbar {
+    display: none; /* Hide the new image container */
+}
   .curve {
     margin-top: 20px;
     padding: 20px 20px;
@@ -474,4 +502,14 @@ body {
     padding-top: 7px;
   }
   
+}
+
+@media only screen and (min-width: 1640px) {
+  .bg {
+    display: block; /* Show background image */
+}
+
+.image-below-navbar {
+    display: none; /* Hide the new image container */
+}
 }
