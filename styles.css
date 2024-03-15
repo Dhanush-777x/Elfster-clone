@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --secondary: #edfaf7;
+  --background: #ffffff;
+  --primary: #008583;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.bg {
+  background-image: url("https://d5qwdql29d6jm.cloudfront.net/remote/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9yYmt6YTZpcXY5ZmgvMWdEMzJWZnJqQlp2dVZmNWY3aFY4Qy9kYTM0ODNkODk3ZDY2OGJmYzg3YjNhNzM3NTQxYTMyYS9saWdodC1iYWNrZ3JvdW5kLWRlc2t0b3AucG5n.7iTd0sIOxTg.png?");
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: var(--background);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 32px;
+}
+
+.secret-santa-card {
+  background-color: var(--background);
+  border-radius: 30px;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px 90px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header p {
+  font-size: 14px;
+}
+
+.card-header a {
+  color: #000;
+}
+
+/* formDiv */
+
+.form-container h3 {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* Form */
+.secret-santa-form label {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 0px;
+}
+
+#name {
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px grey;
+  width: 93%;
+}
+
+.checkbox-container {
+  margin: 30px 0px;
+}
+
+.checkbox-container input[type="radio"] {
+  display: none;
+}
+
+.checkbox-container input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.checkbox-container input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.checkbox-container input[type="radio"]:checked + label::before {
+  background-color: teal;
+}
+
+.secret-santa-form h5 {
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.secret-santa-form a {
+  color: var(--primary);
+}
+
+.secret-santa-form span {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.other-names-container input {
+  margin-top: 20px !important;
+}
+
+/* Add button */
+.add-btn {
+  border: none;
+  color: var(--primary);
+  background-color: transparent;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* submit button */
+.submit-btn {
+  background-color: teal;
+  border-radius: 20px;
+  width: 100%;
+  color: var(--background);
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary);
+}
+
+.submit-btn i{
+  color: var(--background);
+  padding-left: 5px;
+}
+
+.note-text {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.curve {
+  border-bottom-right-radius: 100px;
+  background-color: teal;
+  height: 15vh;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.footer-bg {
+  background-color: teal;
+  height: 10vh;
+}
+
+.footer-logo-container {
+  border-top-left-radius: 100px;
+  background-color: var(--secondary);
+  height: 15vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.column i {
+  width: 60px;
+  color: #fff;
+}
+
+.column p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-logo-container .logo {
+  height: 35px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.links-container {
+  width: 100%;
+}
+.links-container div {
+  background-color: var(--secondary);
+  padding: 0 35%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer-sub-cards-container {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 20%;
+}
+.footer-sub-cards-container p {
+  font-weight: bold;
+}
+.footer-sub-card {
+  background-color: var(--background);
+  border-radius: 15px;
+  height: 80px;
+  width: 300px;
+  padding: 25px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.f-card-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-card-1 i {
+  color: teal;
+}
+
+.f-card-2 p {
+  margin-top: 0;
+}
+.f-card-2 img {
+  height: 40px;
+}
+
+.f-card-3 div div {
+  display: flex;
+  justify-content: center;
+}
+.f-card-3 p {
+  font-size: 13px;
+}
+.f-card-3 input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  border: 0.1px solid teal;
+  width: 200px;
+}
+
+.f-card-3 div div i {
+  position: absolute;
+  right: 23.5%;
+  padding: 5px 10px;
+  pointer-events: none;
+  color: teal;
+}
+.copyright-section{
+  background-color: teal;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  font-size: 14px;
+}
+
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .secret-santa-card {
+    padding: 20px;
+  }
+
+  .curve {
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .footer-logo-container{
+    border-top-left-radius: 30px;
+    padding-top: 40px;
+    z-index: 5;
+  }
+
+  .footer-logo-container .logo {
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .links-container div {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .links-container p {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-sub-cards-container {
+    padding: 10px 15%;
+  }
+
+  .f-card-3 input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .footer-sub-card {
+    width: 100%;
+    padding: 15px;
+  } 
+  .footer-sub-cards-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .footer-sub-card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .f-card-3 div div i {
+    position: absolute;
+    right: 8%;
+    padding-top: 7px;
+  }
+  .copyright-section{
+    font-size: 10px;
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  .curve {
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .footer-logo-container{
+    border-top-left-radius: 30px;
+    padding-top: 40px;
+    z-index: 5;
+  }
+
+  .footer-logo-container .logo {
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .links-container div {
+    padding: 20px 100px;
+  }
+
+  .links-container p {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-sub-cards-container {
+    padding: 10px 15%;
+  }
+
+  .f-card-3 input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .footer-sub-card {
+    width: 100%;
+    padding: 15px;
+  } 
+  .footer-sub-cards-container {
+    padding: 10px;
+  }
+
+  .footer-sub-card {
+    margin: 0 10px;
+    padding: 20px 10px;
+  }
+  .f-card-3 div div i {
+    position: absolute;
+    right: 8%;
+    padding-top: 7px;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1025px) and (max-width: 1640px)  {
+  .curve {
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .footer-logo-container{
+    border-top-left-radius: 30px;
+    padding-top: 40px;
+    z-index: 5;
+  }
+
+  .footer-logo-container .logo {
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .links-container div {
+    padding: 20px 200px;
+  }
+
+  .links-container p {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-sub-cards-container {
+    padding: 10px 15%;
+  }
+
+  .f-card-3 input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .footer-sub-card {
+    width: 100%;
+    padding: 15px;
+  } 
+  .footer-sub-cards-container {
+    padding: 20px 100px;
+  }
+
+  .footer-sub-card {
+    margin: 0 10px;
+    padding: 20px 10px;
+  }
+  .f-card-3 div div i {
+    position: absolute;
+    right: 10%;
+    padding-top: 7px;
+  }
+  
+}
