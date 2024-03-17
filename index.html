@@ -35,9 +35,11 @@
         </div>
         <div class="form-container">
           <h3>Enter Names</h3>
-          <form action="" class="secret-santa-form">
+          <form action="" id="secretSantaForm" class="secret-santa-form" onsubmit=validateForm(event)>
+            <div class="warning" id="nameWarning">Please enter your name</div>
             <label for="name">Your Name</label> <br />
             <input type="text" id="name" placeholder="Enter Name" /> <br />
+            
             <div class="checkbox-container">
               <input
                 type="radio"
@@ -56,12 +58,12 @@
             <span>Got a big group? <a href="">Click here.</a></span> <br />
 
             <div class="other-names-container">
-              <input type="text" id="name" placeholder="Enter Name 2" /> <br />
-              <input type="text" id="name" placeholder="Enter Name 3" /> <br />
-              <input type="text" id="name" placeholder="Enter Name 4" /> <br />
+              <input type="text" placeholder="Enter Name 2" /> <br />
+              <input type="text" placeholder="Enter Name 3" /> <br />
+              <input type="text" placeholder="Enter Name 4" /> <br />
             </div>
 
-            <button class="add-btn">+Add more names?</button>
+            <button class="add-btn" type="button"  onclick="addNewNameInput()">+Add more names?</button>
             <button class="submit-btn" type="submit">
               get the party started <i class="fa-solid fa-arrow-right"> </i>
             </button>
@@ -142,5 +144,7 @@
       </div>
       
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

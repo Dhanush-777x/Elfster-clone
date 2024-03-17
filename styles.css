@@ -10,6 +10,7 @@ html,
 body {
   margin: 0;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .bg {
@@ -120,7 +121,11 @@ body {
 }
 
 .other-names-container input {
-  margin-top: 20px !important;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px grey;
+  width: 93%;
 }
 
 /* Add button */
@@ -295,13 +300,13 @@ body {
 }
 
 .image-below-navbar {
-    display: block; /* Show the new image container */
+    display: block;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .image-below-navbar img {
-    max-width: 100%; /* Make sure the image fits within the container */
+    max-width: 100%;
 }
   .navbar {
     padding: 15px;
@@ -378,11 +383,11 @@ body {
 /* Medium devices */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .bg {
-    display: block; /* Show background image */
+    display: block;
 }
 
 .image-below-navbar {
-    display: none; /* Hide the new image container */
+    display: none;
 }
   .curve {
     margin-top: 20px;
@@ -442,11 +447,11 @@ body {
 /* Large devices */
 @media only screen and (min-width: 1025px) and (max-width: 1640px)  {
   .bg {
-    display: block; /* Show background image */
+    display: block;
 }
 
 .image-below-navbar {
-    display: none; /* Hide the new image container */
+    display: none;
 }
   .curve {
     margin-top: 20px;
@@ -506,10 +511,29 @@ body {
 
 @media only screen and (min-width: 1640px) {
   .bg {
-    display: block; /* Show background image */
+    display: block;
 }
 
 .image-below-navbar {
-    display: none; /* Hide the new image container */
+    display: none;
 }
+}
+
+.warning {
+  display: none;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin:auto;
+  width:fit-content;
+  text-align: center;
+}
+
+.other-names-container {
+  margin-bottom: 10px;
+}
+
+.other-names-container input {
+  margin-bottom: 10px;
 }
