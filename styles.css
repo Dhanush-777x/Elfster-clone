@@ -291,7 +291,9 @@ body {
   color: var(--background);
   font-size: 14px;
 }
-
+.copyright-section p{
+  margin: 0 20px;
+}
 
 /* Small devices */
 @media only screen and (max-width: 600px) {
@@ -377,6 +379,11 @@ body {
   }
   .copyright-section{
     font-size: 10px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .copyright-section p{
+    padding: 5px 0;
   }
 }
 
