@@ -21,10 +21,13 @@
           alt=""
         />
       </nav>
-      
+
       <div class="image-below-navbar">
-        <img src="https://d5qwdql29d6jm.cloudfront.net/remote/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9yYmt6YTZpcXY5ZmgvMWdEMzJWZnJqQlp2dVZmNWY3aFY4Qy9kYTM0ODNkODk3ZDY2OGJmYzg3YjNhNzM3NTQxYTMyYS9saWdodC1iYWNrZ3JvdW5kLWRlc2t0b3AucG5n.7iTd0sIOxTg.png?" alt="Image Below Navbar">
-    </div>
+        <img
+          src="https://d5qwdql29d6jm.cloudfront.net/remote/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9yYmt6YTZpcXY5ZmgvMWdEMzJWZnJqQlp2dVZmNWY3aFY4Qy9kYTM0ODNkODk3ZDY2OGJmYzg3YjNhNzM3NTQxYTMyYS9saWdodC1iYWNrZ3JvdW5kLWRlc2t0b3AucG5n.7iTd0sIOxTg.png?"
+          alt="Image Below Navbar"
+        />
+      </div>
       <div class="secret-santa-card">
         <div class="card-header">
           <h2>Start Your Secret Santa</h2>
@@ -36,11 +39,16 @@
         </div>
         <div class="form-container">
           <h3>Enter Names</h3>
-          <form action="" id="secretSantaForm" class="secret-santa-form" onsubmit=validateForm(event)>
+          <form
+            action=""
+            id="secretSantaForm"
+            class="secret-santa-form"
+            onsubmit="validateForm(event)"
+          >
             <div class="warning" id="nameWarning">Please enter your name</div>
             <label for="name">Your Name</label> <br />
             <input type="text" id="name" placeholder="Enter Name" /> <br />
-            
+
             <div class="checkbox-container">
               <input
                 type="radio"
@@ -64,7 +72,9 @@
               <input type="text" placeholder="Enter Name 4" /> <br />
             </div>
 
-            <button class="add-btn" type="button"  onclick="addNewNameInput()">+Add more names?</button>
+            <button class="add-btn" type="button" onclick="addNewNameInput()">
+              +Add more names?
+            </button>
             <button class="submit-btn" type="submit">
               get the party started <i class="fa-solid fa-arrow-right"> </i>
             </button>
@@ -75,24 +85,26 @@
           </form>
         </div>
       </div>
-      <div class="curve">
-        <div class="column">
-          <i class="fa-solid fa-handshake"></i>
-          <p>Trusted by 33 million people</p>
-        </div>
-        <div class="column">
-          <p>|</p>
-        </div>
-        <div class="column">
-          <p>⭐⭐⭐⭐⭐</p>
-          <p>4.9 star rating | 234K reviews</p>
-        </div>
-        <div class="column">
-          <p>|</p>
-        </div>
-        <div class="column">
-          <i class="fa-solid fa-trophy"></i>
-          <p>#1 secret santa generator</p>
+      <div class="curve-bg">
+        <div class="curve">
+          <div class="column">
+            <i class="fa-solid fa-handshake"></i>
+            <p>Trusted by 33 million people</p>
+          </div>
+          <div class="column">
+            <p>|</p>
+          </div>
+          <div class="column">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>4.9 star rating | 234K reviews</p>
+          </div>
+          <div class="column">
+            <p>|</p>
+          </div>
+          <div class="column">
+            <i class="fa-solid fa-trophy"></i>
+            <p>#1 secret santa generator</p>
+          </div>
         </div>
       </div>
 
@@ -128,22 +140,20 @@
           </div>
           <div class="footer-sub-card f-card-3">
             <div>
-                <p>Sign Up for Gifts, Giveaways & Good News!</p>
-                <div>
-                    <i class="fa-solid fa-arrow-right"> </i>
-                    <input type="text"  placeholder="Enter email" />
-                </div>
+              <p>Sign Up for Gifts, Giveaways & Good News!</p>
+              <div>
+                <i class="fa-solid fa-arrow-right"> </i>
+                <input type="text" placeholder="Enter email" />
+              </div>
             </div>
-            
-        </div>
+          </div>
         </div>
         <div class="copyright-section">
-            <p>© 2024 Elfster, Inc.</p>
-            <p>Privacy Policy | CA Privacy Rights | Terms Of Service</p>
-            <p>USA</p>
-          </div>
+          <p>© 2024 Elfster, Inc.</p>
+          <p>Privacy Policy | CA Privacy Rights | Terms Of Service</p>
+          <p>USA</p>
+        </div>
       </div>
-      
     </div>
 
     <script src="./script.js"></script>
