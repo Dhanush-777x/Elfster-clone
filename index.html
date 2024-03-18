@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Secret Santa Generator</title>
+    <!-- Favicon link -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome kit -->
     <script
       src="https://kit.fontawesome.com/a66db21723.js"
       crossorigin="anonymous"
@@ -13,42 +17,56 @@
   </head>
 
   <body>
+    <!-- Main container -->
     <div class="container bg">
+      <!-- Navbar -->
       <nav class="navbar">
-        <img
+        <!-- Elfster logo -->
+        <a href="https://www.elfster.com/">
+          <img
           class="logo"
           src="https://static.elfster.com/2024.301.1901.4627/apps/vue/static/images/elfster-logo-black.png?571319bdd9389d676db9"
           alt=""
         />
+        </a>
+        
       </nav>
 
+      <!-- Image below navbar -->
       <div class="image-below-navbar">
         <img
           src="https://d5qwdql29d6jm.cloudfront.net/remote/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9yYmt6YTZpcXY5ZmgvMWdEMzJWZnJqQlp2dVZmNWY3aFY4Qy9kYTM0ODNkODk3ZDY2OGJmYzg3YjNhNzM3NTQxYTMyYS9saWdodC1iYWNrZ3JvdW5kLWRlc2t0b3AucG5n.7iTd0sIOxTg.png?"
           alt="Image Below Navbar"
         />
       </div>
+      <!-- Secret Santa card -->
       <div class="secret-santa-card">
+        <!-- Card header -->
         <div class="card-header">
           <h2>Start Your Secret Santa</h2>
           <p>
             Organize your Elfster exchange lickety-split. You'll be done in less
             than two minutes. Then get ready to exchange gifts! Already did this
-            last year? <a href="">Use your previous exchanges.</a>
+            last year? <a href="https://www.elfster.com/a/sign-up/">Use your previous exchanges.</a>
           </p>
         </div>
+        <!-- Form container -->
         <div class="form-container">
           <h3>Enter Names</h3>
+          <!-- Secret Santa form -->
           <form
             action=""
             id="secretSantaForm"
             class="secret-santa-form"
             onsubmit="validateForm(event)"
           >
+            <!-- Name warning message -->
             <div class="warning" id="nameWarning">Please enter your name</div>
+            <!-- Name input -->
             <label for="name">Your Name</label> <br />
             <input type="text" id="name" placeholder="Enter Name" /> <br />
 
+            <!-- Radio buttons for selection -->
             <div class="checkbox-container">
               <input
                 type="radio"
@@ -66,18 +84,22 @@
             <h5>Add Your Friends</h5>
             <span>Got a big group? <a href="">Click here.</a></span> <br />
 
+            <!-- Container for other names input -->
             <div class="other-names-container">
               <input type="text" placeholder="Enter Name 2" /> <br />
               <input type="text" placeholder="Enter Name 3" /> <br />
               <input type="text" placeholder="Enter Name 4" /> <br />
             </div>
 
+            <!-- Button to add more name input boxes -->
             <button class="add-btn" type="button" onclick="addNewNameInput()">
               +Add more names?
             </button>
+            <!-- Submit button -->
             <button class="submit-btn" type="submit">
               get the party started <i class="fa-solid fa-arrow-right"> </i>
             </button>
+            <!-- Note text -->
             <p class="note-text">
               Don't fret! You can add more friends (or remove them) later, no
               sweat.
@@ -85,7 +107,9 @@
           </form>
         </div>
       </div>
+      <!-- Curved Footer background -->
       <div class="curve-bg">
+        <!-- Curved Footer content -->
         <div class="curve">
           <div class="column">
             <i class="fa-solid fa-handshake"></i>
@@ -108,7 +132,9 @@
         </div>
       </div>
 
+      <!-- Footer background -->
       <div class="footer-bg">
+        <!-- Footer logo container -->
         <div class="footer-logo-container">
           <img
             class="logo"
@@ -116,6 +142,7 @@
             alt=""
           />
         </div>
+        <!-- Links container -->
         <div class="links-container">
           <div>
             <p>About</p>
@@ -124,30 +151,42 @@
             <p>Tell a Friend</p>
           </div>
         </div>
+        <!-- Footer sub cards container -->
         <div class="footer-sub-cards-container">
           <div class="footer-sub-card f-card-1">
             <p>Follow on social:</p>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.instagram.com/elfster" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/elfster" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/elfster" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/elfster"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/channel/UCEo6B92h4X1YSUJMdQeLUTA"><i class="fa-brands fa-youtube"></i></a>
           </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/elfster" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/elfster" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/elfster" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/elfster" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/channel/UCEo6B92h4X1YSUJMdQeLUTA" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          
           <div class="footer-sub-card f-card-2">
             <p>Download the App:</p>
-            <img src="./Assets/appstore.png" alt="" />
-            <img src="./Assets/playstore.png" alt="" />
+            <a href="https://apps.apple.com/us/app/elfster-the-secret-santa-app/id751594890"><img src="./Assets/appstore.png" alt="" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.elfster.elfdroid&pli=1"><img src="./Assets/playstore.png" alt="" /></a>
           </div>
-          <div class="footer-sub-card f-card-3">
-            <div>
-              <p>Sign Up for Gifts, Giveaways & Good News!</p>
+            <div class="footer-sub-card f-card-3">
               <div>
-                <i class="fa-solid fa-arrow-right"> </i>
-                <input type="text" placeholder="Enter email" />
+                <p>Sign Up for Gifts, Giveaways & Good News!</p>
+                <div>
+                  <i class="fa-solid fa-arrow-right"> </i>
+                  <input type="text" placeholder="Enter email" />
+                </div>
               </div>
-            </div>
           </div>
+            
+          
         </div>
+        <!-- Copyright section -->
         <div class="copyright-section">
           <p>© 2024 Elfster, Inc.</p>
           <p>Privacy Policy | CA Privacy Rights | Terms Of Service</p>
@@ -156,6 +195,7 @@
       </div>
     </div>
 
+    <!-- External JavaScript file -->
     <script src="./script.js"></script>
   </body>
 </html>

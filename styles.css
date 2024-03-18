@@ -1,11 +1,14 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+/* Define custom CSS variables */
 :root {
   --secondary: #edfaf7;
   --background: #ffffff;
   --primary: #008583;
 }
 
+/* Global styles for HTML and body */
 html,
 body {
   margin: 0;
@@ -13,12 +16,14 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Background styles */
 .bg {
   background-image: url("https://d5qwdql29d6jm.cloudfront.net/remote/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9yYmt6YTZpcXY5ZmgvMWdEMzJWZnJqQlp2dVZmNWY3aFY4Qy9kYTM0ODNkODk3ZDY2OGJmYzg3YjNhNzM3NTQxYTMyYS9saWdodC1iYWNrZ3JvdW5kLWRlc2t0b3AucG5n.7iTd0sIOxTg.png?");
   background-size: cover;
   height: 100vh;
 }
 
+/* Navbar styles */
 .navbar {
   background-color: var(--background);
   overflow: hidden;
@@ -28,6 +33,7 @@ body {
   height: 32px;
 }
 
+/* Secret Santa card styles */
 .secret-santa-card {
   background-color: var(--background);
   border-radius: 30px;
@@ -37,6 +43,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* Card header styles */
 .card-header {
   text-align: center;
 }
@@ -49,15 +56,14 @@ body {
   color: #000;
 }
 
-/* formDiv */
-
+/* Form container styles */
 .form-container h3 {
   color: var(--primary);
   font-weight: bold;
   font-size: 17px;
 }
 
-/* Form */
+/* Secret Santa form styles */
 .secret-santa-form label {
   font-weight: bold;
   font-size: 15px;
@@ -76,6 +82,7 @@ body {
   margin: 30px 0px;
 }
 
+/* Styling for radio buttons */
 .checkbox-container input[type="radio"] {
   display: none;
 }
@@ -120,15 +127,19 @@ body {
   font-size: 12px;
 }
 
+.other-names-container {
+  margin-bottom: 10px;
+}
+
 .other-names-container input {
-  margin-top: 15px;
+  margin-bottom: 10px;
   padding: 15px;
   border-radius: 5px;
   border: solid 1px grey;
   width: 93%;
 }
 
-/* Add button */
+/* Add button styles */
 .add-btn {
   border: none;
   color: var(--primary);
@@ -138,7 +149,7 @@ body {
   font-size: 12px;
 }
 
-/* submit button */
+/* Submit button styles */
 .submit-btn {
   background-color: teal;
   border-radius: 20px;
@@ -164,10 +175,13 @@ body {
   font-weight: 300;
   text-align: center;
 }
-.curve-bg{
+
+/* Curve background styles */
+.curve-bg {
   background-color: var(--secondary);
   width: 100%;
 }
+
 .curve {
   border-bottom-right-radius: 100px;
   background-color: teal;
@@ -179,11 +193,13 @@ body {
   padding: 0 200px;
 }
 
+/* Footer background styles */
 .footer-bg {
   background-color: teal;
   height: 10vh;
 }
 
+/* Footer logo container styles */
 .footer-logo-container {
   border-top-left-radius: 100px;
   background-color: var(--secondary);
@@ -193,6 +209,7 @@ body {
   justify-content: center;
 }
 
+/* Column styles */
 .column {
   flex: 1;
   text-align: center;
@@ -208,14 +225,18 @@ body {
   font-size: 14px;
   color: #fff;
 }
+
 .footer-logo-container .logo {
   height: 35px;
   margin-top: 30px;
   padding-top: 30px;
 }
+
+/* Links container styles */
 .links-container {
   width: 100%;
 }
+
 .links-container div {
   background-color: var(--secondary);
   padding: 0 35%;
@@ -225,15 +246,18 @@ body {
   font-size: 20px;
 }
 
+/* Footer sub cards container styles */
 .footer-sub-cards-container {
   background-color: var(--secondary);
   display: flex;
   justify-content: space-between;
   padding: 45px 20%;
 }
+
 .footer-sub-cards-container p {
   font-weight: bold;
 }
+
 .footer-sub-card {
   background-color: var(--background);
   border-radius: 15px;
@@ -244,6 +268,7 @@ body {
   text-align: center;
 }
 
+/* Footer sub card 1 styles */
 .f-card-1 {
   display: flex;
   justify-content: space-between;
@@ -253,21 +278,39 @@ body {
 .f-card-1 i {
   color: teal;
 }
+/* socials-icons for mobile devices */
 
+.social-icons {
+  display: flex;
+  padding: 0 40px;
+  margin: 50px 0;
+  justify-content: space-between;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: teal;
+}
+
+/* Footer sub card 2 styles */
 .f-card-2 p {
   margin-top: 0;
 }
+
 .f-card-2 img {
   height: 40px;
 }
 
+/* Footer sub card 3 styles */
 .f-card-3 div div {
   display: flex;
   justify-content: center;
 }
+
 .f-card-3 p {
   font-size: 13px;
 }
+
 .f-card-3 input {
   border-radius: 5px;
   width: 100%;
@@ -283,6 +326,8 @@ body {
   pointer-events: none;
   color: teal;
 }
+
+/* Copyright section styles */
 .copyright-section {
   background-color: teal;
   padding: 10px;
@@ -293,9 +338,6 @@ body {
   justify-content: center;
   color: var(--background);
   font-size: 14px;
-}
-.copyright-section p {
-  margin: 0 20px;
 }
 
 /* Small devices */
@@ -355,6 +397,9 @@ body {
 
   .footer-sub-cards-container {
     padding: 10px 15%;
+  }
+  .f-card-1 {
+    display: none;
   }
 
   .f-card-3 input {
@@ -429,7 +474,9 @@ body {
   .footer-sub-cards-container {
     padding: 10px 15%;
   }
-
+  .social-icons {
+    display: none;
+  }
   .f-card-3 input {
     width: 100%;
     padding: 8px;
@@ -494,6 +541,10 @@ body {
     padding: 10px 15%;
   }
 
+  .social-icons {
+    display: none;
+  }
+
   .f-card-3 input {
     width: 100%;
     padding: 8px;
@@ -526,6 +577,10 @@ body {
   .image-below-navbar {
     display: none;
   }
+
+  .social-icons {
+    display: none;
+  }
 }
 
 .warning {
@@ -537,12 +592,4 @@ body {
   margin: auto;
   width: fit-content;
   text-align: center;
-}
-
-.other-names-container {
-  margin-bottom: 10px;
-}
-
-.other-names-container input {
-  margin-bottom: 10px;
 }
